@@ -468,7 +468,7 @@ DataType=0x0005
 AccessType=rw
 DefaultValue=0xFF
 PDOMapping=0
-ParameterValue=1
+ParameterValue=0xFF
 
 [1401]
 SubNumber=3
@@ -498,7 +498,7 @@ DataType=0x0005
 AccessType=rw
 DefaultValue=0xFF
 PDOMapping=0
-ParameterValue=1
+ParameterValue=0x1
 
 [1402]
 SubNumber=3
@@ -528,7 +528,7 @@ DataType=0x0005
 AccessType=rw
 DefaultValue=0xFF
 PDOMapping=0
-ParameterValue=1
+ParameterValue=0xFF
 
 [1403]
 SubNumber=3
@@ -558,7 +558,7 @@ DataType=0x0005
 AccessType=rw
 DefaultValue=0xFF
 PDOMapping=0
-ParameterValue=1
+ParameterValue=0xFF
 
 [1600]
 SubNumber=4
@@ -688,7 +688,7 @@ DataType=0x0005
 AccessType=rw
 DefaultValue=0x02
 PDOMapping=0
-ParameterValue=2
+ParameterValue=1
 
 [1603sub1]
 ParameterName=Mapping Entry 1
@@ -706,7 +706,6 @@ DataType=0x0007
 AccessType=rw
 DefaultValue=0x60FF0020
 PDOMapping=0
-ParameterValue=1618018336
 
 [1603sub3]
 ParameterName=Mapping Entry 3
@@ -745,7 +744,7 @@ DataType=0x0005
 AccessType=rw
 DefaultValue=0xFF
 PDOMapping=0
-ParameterValue=1
+ParameterValue=0x1
 
 [1800sub3]
 ParameterName=Inhibit Time
@@ -800,7 +799,7 @@ DataType=0x0005
 AccessType=rw
 DefaultValue=0xFF
 PDOMapping=0
-ParameterValue=1
+ParameterValue=0x1
 
 [1801sub3]
 ParameterName=Inhibit Time
@@ -855,7 +854,7 @@ DataType=0x0005
 AccessType=rw
 DefaultValue=0x1
 PDOMapping=0
-ParameterValue=1
+ParameterValue=0x1
 
 [1802sub3]
 ParameterName=Inhibit Time
@@ -910,7 +909,7 @@ DataType=0x0005
 AccessType=rw
 DefaultValue=0xFE
 PDOMapping=0
-ParameterValue=1
+ParameterValue=0xFE
 
 [1803sub3]
 ParameterName=Inhibit Time
@@ -1808,7 +1807,6 @@ DataType=0x0002
 AccessType=rw
 DefaultValue=0x00
 PDOMapping=1
-ParameterValue=0x02
 
 [6061]
 ParameterName=Modes of Operation Display
@@ -1871,7 +1869,7 @@ PDOMapping=1
 [6071]
 ParameterName=Target Torque
 ObjectType=0x07
-DataType=0x0004
+DataType=0x0003
 AccessType=rww
 DefaultValue=0x0000
 PDOMapping=1
@@ -2087,5 +2085,6 @@ DataType=0x0007
 AccessType=ro
 DefaultValue=0x00020192
 PDOMapping=0
+
 
 
