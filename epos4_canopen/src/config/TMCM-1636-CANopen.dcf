@@ -468,7 +468,7 @@ DataType=0x0005
 AccessType=rw
 DefaultValue=0xFF
 PDOMapping=0
-ParameterValue=0xFF
+ParameterValue=0x1
 
 [1401]
 SubNumber=3
@@ -498,7 +498,7 @@ DataType=0x0005
 AccessType=rw
 DefaultValue=0xFF
 PDOMapping=0
-ParameterValue=0x1
+ParameterValue=0x00
 
 [1402]
 SubNumber=3
@@ -528,7 +528,7 @@ DataType=0x0005
 AccessType=rw
 DefaultValue=0xFF
 PDOMapping=0
-ParameterValue=0xFF
+ParameterValue=0x00
 
 [1403]
 SubNumber=3
@@ -558,7 +558,7 @@ DataType=0x0005
 AccessType=rw
 DefaultValue=0xFF
 PDOMapping=0
-ParameterValue=0xFF
+ParameterValue=0x1
 
 [1600]
 SubNumber=4
@@ -581,7 +581,7 @@ DataType=0x0007
 AccessType=rw
 DefaultValue=0x60400010
 PDOMapping=0
-ParameterValue=1614807056
+ParameterValue=0x60400010
 
 [1600sub2]
 ParameterName=Mapping Entry 2
@@ -590,7 +590,7 @@ DataType=0x0007
 AccessType=rw
 DefaultValue=0x00000000
 PDOMapping=0
-ParameterValue=1627324448
+ParameterValue=0x60FF0020
 
 [1600sub3]
 ParameterName=Mapping Entry 3
@@ -621,7 +621,7 @@ DataType=0x0007
 AccessType=rw
 DefaultValue=0x60400010
 PDOMapping=0
-ParameterValue=1618608160
+ParameterValue=0x607A0020
 
 [1601sub2]
 ParameterName=Mapping Entry 2
@@ -697,7 +697,7 @@ DataType=0x0007
 AccessType=rw
 DefaultValue=0x60400010
 PDOMapping=0
-ParameterValue=1616904200
+ParameterValue=0x60600008
 
 [1603sub2]
 ParameterName=Mapping Entry 2
@@ -744,7 +744,7 @@ DataType=0x0005
 AccessType=rw
 DefaultValue=0xFF
 PDOMapping=0
-ParameterValue=0x1
+ParameterValue=0x00
 
 [1800sub3]
 ParameterName=Inhibit Time
@@ -799,7 +799,7 @@ DataType=0x0005
 AccessType=rw
 DefaultValue=0xFF
 PDOMapping=0
-ParameterValue=0x1
+ParameterValue=0x00
 
 [1801sub3]
 ParameterName=Inhibit Time
@@ -854,7 +854,7 @@ DataType=0x0005
 AccessType=rw
 DefaultValue=0x1
 PDOMapping=0
-ParameterValue=0x1
+ParameterValue=0x00
 
 [1802sub3]
 ParameterName=Inhibit Time
@@ -909,7 +909,7 @@ DataType=0x0005
 AccessType=rw
 DefaultValue=0xFE
 PDOMapping=0
-ParameterValue=0xFE
+ParameterValue=0x00
 
 [1803sub3]
 ParameterName=Inhibit Time
@@ -956,7 +956,7 @@ DataType=0x0007
 AccessType=rw
 DefaultValue=0x60410010
 PDOMapping=0
-ParameterValue=1614872592
+ParameterValue=0x60410010
 
 [1A00sub2]
 ParameterName=Mapping Entry 2
@@ -965,7 +965,7 @@ DataType=0x0007
 AccessType=rw
 DefaultValue=0x00000000
 PDOMapping=0
-ParameterValue=1616969736
+ParameterValue=0x60610008
 
 [1A00sub3]
 ParameterName=Mapping Entry 3
@@ -1033,7 +1033,7 @@ DataType=0x0007
 AccessType=rw
 DefaultValue=0x60410010
 PDOMapping=0
-ParameterValue=1617166368
+ParameterValue=0x60640020
 
 [1A02sub2]
 ParameterName=Mapping Entry 2
@@ -1752,6 +1752,7 @@ ObjectType=0x07
 DataType=0x0006
 AccessType=rw
 PDOMapping=1
+ParameterValue=1
 
 [6041]
 ParameterName=Statusword
@@ -1915,7 +1916,7 @@ ParameterName=Min Software Position Limit
 ObjectType=0x07
 DataType=0x0004
 AccessType=rw
-DefaultValue=0x00000000
+DefaultValue=0x80000000
 PDOMapping=0
 
 [607Dsub2]
@@ -1930,7 +1931,7 @@ PDOMapping=0
 ParameterName=Profile Velocity in pp-mode
 ObjectType=0x07
 DataType=0x0007
-AccessType=rw
+AccessType=rwr
 DefaultValue=0xFA0
 PDOMapping=1
 
@@ -1940,7 +1941,7 @@ ObjectType=0x07
 DataType=0x0007
 AccessType=rw
 DefaultValue=0x00000000
-PDOMapping=1
+PDOMapping=0
 
 [6084]
 ParameterName=Profile Deceleration
@@ -1948,7 +1949,7 @@ ObjectType=0x07
 DataType=0x0007
 AccessType=ro
 DefaultValue=0x00000000
-PDOMapping=1
+PDOMapping=0
 
 [6085]
 ParameterName=Quick Stop Deceleration
@@ -2085,6 +2086,4 @@ DataType=0x0007
 AccessType=ro
 DefaultValue=0x00020192
 PDOMapping=0
-
-
 
