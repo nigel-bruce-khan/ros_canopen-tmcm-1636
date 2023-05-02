@@ -468,7 +468,7 @@ DataType=0x0005
 AccessType=rw
 DefaultValue=0xFF
 PDOMapping=0
-ParameterValue=0x1
+ParameterValue=0x01
 
 [1401]
 SubNumber=3
@@ -558,7 +558,7 @@ DataType=0x0005
 AccessType=rw
 DefaultValue=0xFF
 PDOMapping=0
-ParameterValue=0x1
+ParameterValue=0x01
 
 [1600]
 SubNumber=4
@@ -1752,7 +1752,6 @@ ObjectType=0x07
 DataType=0x0006
 AccessType=rw
 PDOMapping=1
-ParameterValue=1
 
 [6041]
 ParameterName=Statusword
@@ -2086,4 +2085,3 @@ DataType=0x0007
 AccessType=ro
 DefaultValue=0x00020192
 PDOMapping=0
-
