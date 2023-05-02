@@ -1,26 +1,23 @@
-
-; This EDS file was created by the CANopen Design Tool 2.3.36.0.
-; port GmbH Halle/Saale Germany, http://www.port.de, mailto:service@port.de
-
 [FileInfo]
 FileName=TMCM-1636-CANopen.dcf
 FileVersion=1
-FileRevision=13
+FileRevision=19
 EDSVersion=4.0
-Description=TMCM-1636  BLDC/PMSM controller
-CreationTime=10:46PM
-CreationDate=06-07-2021
-CreatedBy=OK, ED
-ModificationTime=12:28PM
-ModificationDate=05-25-2022
-ModifiedBy=OK, ED
+Description=test
+CreationTime=16:01
+CreationDate=05-02-2023
+CreatedBy=
+ModificationTime=16:01
+ModificationDate=05-02-2023
+ModifiedBy=
+LastEDS=TMCM-1636.eds
 
 [DeviceInfo]
 VendorName=Trinamic Motion Control GmbH
 VendorNumber=0x286
 ProductName=TMCM-1636
 ProductNumber=0x664
-RevisionNumber=0x0001000D
+RevisionNumber=0x00010013
 OrderCode=TMCM-1636
 BaudRate_10=0
 BaudRate_20=1
@@ -58,7 +55,7 @@ SupportedObjects=3
 3=0x1018
 
 [OptionalObjects]
-SupportedObjects=65
+SupportedObjects=71
 1=0x1005
 2=0x1008
 3=0x1009
@@ -100,62 +97,69 @@ SupportedObjects=65
 39=0x6062
 40=0x6063
 41=0x6064
-42=0x6067
-43=0x6068
-44=0x606B
-45=0x606C
-46=0x6071
-47=0x6077
-48=0x607A
-49=0x607C
-50=0x607D
-51=0x6081
-52=0x6083
-53=0x6084
-54=0x6085
-55=0x6098
-56=0x6099
-57=0x609A
-58=0x60B0
-59=0x60B1
-60=0x60B2
-61=0x60C2
-62=0x60FD
-63=0x60FF
-64=0x6502
-65=0x67FF
+42=0x6065
+43=0x6067
+44=0x6068
+45=0x606A
+46=0x606B
+47=0x606C
+48=0x6071
+49=0x6072
+50=0x6074
+51=0x6077
+52=0x607A
+53=0x607C
+54=0x607D
+55=0x607F
+56=0x6081
+57=0x6083
+58=0x6084
+59=0x6085
+60=0x6098
+61=0x6099
+62=0x609A
+63=0x60B0
+64=0x60B1
+65=0x60B2
+66=0x60C2
+67=0x60F2
+68=0x60FD
+69=0x60FF
+70=0x6502
+71=0x67FF
 
 [ManufacturerObjects]
-SupportedObjects=29
-1=0x2003
-2=0x2004
-3=0x2005
-4=0x2006
-5=0x2041
-6=0x2042
-7=0x2043
-8=0x2050
-9=0x2055
-10=0x2056
-11=0x2057
-12=0x2058
-13=0x2060
-14=0x2070
-15=0x2080
-16=0x2085
-17=0x2101
-18=0x2102
-19=0x2103
-20=0x2104
-21=0x2140
-22=0x2702
-23=0x2703
-24=0x2704
-25=0x2705
-26=0x2707
-27=0x2708
-28=0x270E
-29=0x5FFF
+SupportedObjects=30
+1=0x2000
+2=0x2003
+3=0x2004
+4=0x2005
+5=0x2006
+6=0x2041
+7=0x2042
+8=0x2043
+9=0x2050
+10=0x2055
+11=0x2056
+12=0x2057
+13=0x2058
+14=0x2060
+15=0x2070
+16=0x2080
+17=0x2085
+18=0x2101
+19=0x2102
+20=0x2103
+21=0x2104
+22=0x2140
+23=0x2702
+24=0x2703
+25=0x2704
+26=0x2705
+27=0x2707
+28=0x2708
+29=0x270E
+30=0x5FFF
 
 [1000]
 ParameterName=Device Type
@@ -218,7 +222,7 @@ DefaultValue=0x00
 PDOMapping=0
 
 [1010]
-SubNumber=6
+SubNumber=5
 ParameterName=Store Parameter Field
 ObjectType=0x08
 
@@ -227,7 +231,7 @@ ParameterName=Highest sub-index supported
 ObjectType=0x07
 DataType=5
 AccessType=ro
-DefaultValue=0x05
+DefaultValue=0x4
 PDOMapping=0
 
 [1010sub1]
@@ -262,16 +266,8 @@ AccessType=rw
 PDOMapping=0
 ObjFlags=0x00000001
 
-[1010sub5]
-ParameterName=Save Device Parameters
-ObjectType=0x07
-DataType=0x0007
-AccessType=rw
-PDOMapping=0
-ObjFlags=0x00000001
-
 [1011]
-SubNumber=6
+SubNumber=5
 ParameterName=Restore Default Parameters
 ObjectType=0x08
 
@@ -280,7 +276,7 @@ ParameterName=Highest sub-index supported
 ObjectType=0x07
 DataType=5
 AccessType=ro
-DefaultValue=0x05
+DefaultValue=0x4
 PDOMapping=0
 
 [1011sub1]
@@ -309,14 +305,6 @@ ObjFlags=0x00000001
 
 [1011sub4]
 ParameterName=Restore Axis 0 Default Parameters
-ObjectType=0x07
-DataType=0x0007
-AccessType=rw
-PDOMapping=0
-ObjFlags=0x00000001
-
-[1011sub5]
-ParameterName=Restore Device Default Parameters
 ObjectType=0x07
 DataType=0x0007
 AccessType=rw
@@ -412,7 +400,7 @@ AccessType=ro
 PDOMapping=0
 
 [1029]
-SubNumber=3
+SubNumber=2
 ParameterName=Error Behaviour
 ObjectType=0x08
 
@@ -421,19 +409,11 @@ ParameterName=Highest sub-index supported
 ObjectType=0x07
 DataType=5
 AccessType=ro
-DefaultValue=0x02
+DefaultValue=0x1
 PDOMapping=0
 
 [1029sub1]
 ParameterName=Communication Error
-ObjectType=0x07
-DataType=0x0005
-AccessType=rw
-DefaultValue=0x0
-PDOMapping=0
-
-[1029sub2]
-ParameterName=Application Error
 ObjectType=0x07
 DataType=0x0005
 AccessType=rw
@@ -460,6 +440,7 @@ DataType=0x0007
 AccessType=rw
 DefaultValue=$NODEID+0x40000200
 PDOMapping=0
+ParameterValue=1073742337
 
 [1400sub2]
 ParameterName=Transmission Type
@@ -468,7 +449,6 @@ DataType=0x0005
 AccessType=rw
 DefaultValue=0xFF
 PDOMapping=0
-ParameterValue=0x01
 
 [1401]
 SubNumber=3
@@ -490,6 +470,7 @@ DataType=0x0007
 AccessType=rw
 DefaultValue=$NODEID+0x40000300
 PDOMapping=0
+ParameterValue=1073742593
 
 [1401sub2]
 ParameterName=Transmission Type
@@ -498,7 +479,6 @@ DataType=0x0005
 AccessType=rw
 DefaultValue=0xFF
 PDOMapping=0
-ParameterValue=0x00
 
 [1402]
 SubNumber=3
@@ -520,6 +500,7 @@ DataType=0x0007
 AccessType=rw
 DefaultValue=$NODEID+0x40000400
 PDOMapping=0
+ParameterValue=3221226497
 
 [1402sub2]
 ParameterName=Transmission Type
@@ -528,7 +509,6 @@ DataType=0x0005
 AccessType=rw
 DefaultValue=0xFF
 PDOMapping=0
-ParameterValue=0x00
 
 [1403]
 SubNumber=3
@@ -550,6 +530,7 @@ DataType=0x0007
 AccessType=rw
 DefaultValue=$NODEID+0x40000500
 PDOMapping=0
+ParameterValue=1073743105
 
 [1403sub2]
 ParameterName=Transmission Type
@@ -558,7 +539,6 @@ DataType=0x0005
 AccessType=rw
 DefaultValue=0xFF
 PDOMapping=0
-ParameterValue=0x01
 
 [1600]
 SubNumber=4
@@ -581,7 +561,7 @@ DataType=0x0007
 AccessType=rw
 DefaultValue=0x60400010
 PDOMapping=0
-ParameterValue=0x60400010
+ParameterValue=1614807056
 
 [1600sub2]
 ParameterName=Mapping Entry 2
@@ -590,7 +570,7 @@ DataType=0x0007
 AccessType=rw
 DefaultValue=0x00000000
 PDOMapping=0
-ParameterValue=0x60FF0020
+ParameterValue=1627324448
 
 [1600sub3]
 ParameterName=Mapping Entry 3
@@ -612,7 +592,7 @@ DataType=0x0005
 AccessType=rw
 DefaultValue=0x02
 PDOMapping=0
-ParameterValue=1
+ParameterValue=2
 
 [1601sub1]
 ParameterName=Mapping Entry 1
@@ -621,7 +601,7 @@ DataType=0x0007
 AccessType=rw
 DefaultValue=0x60400010
 PDOMapping=0
-ParameterValue=0x607A0020
+ParameterValue=1618608160
 
 [1601sub2]
 ParameterName=Mapping Entry 2
@@ -630,6 +610,7 @@ DataType=0x0007
 AccessType=rw
 DefaultValue=0x60600008
 PDOMapping=0
+ParameterValue=1619066912
 
 [1601sub3]
 ParameterName=Mapping Entry 3
@@ -659,6 +640,7 @@ DataType=0x0007
 AccessType=rw
 DefaultValue=0x60400010
 PDOMapping=0
+ParameterValue=1614807056
 
 [1602sub2]
 ParameterName=Mapping Entry 2
@@ -667,6 +649,7 @@ DataType=0x0007
 AccessType=rw
 DefaultValue=0x607A0020
 PDOMapping=0
+ParameterValue=1618608160
 
 [1602sub3]
 ParameterName=Mapping Entry 3
@@ -697,7 +680,7 @@ DataType=0x0007
 AccessType=rw
 DefaultValue=0x60400010
 PDOMapping=0
-ParameterValue=0x60600008
+ParameterValue=1616904200
 
 [1603sub2]
 ParameterName=Mapping Entry 2
@@ -744,7 +727,6 @@ DataType=0x0005
 AccessType=rw
 DefaultValue=0xFF
 PDOMapping=0
-ParameterValue=0x00
 
 [1800sub3]
 ParameterName=Inhibit Time
@@ -799,7 +781,6 @@ DataType=0x0005
 AccessType=rw
 DefaultValue=0xFF
 PDOMapping=0
-ParameterValue=0x00
 
 [1801sub3]
 ParameterName=Inhibit Time
@@ -854,7 +835,6 @@ DataType=0x0005
 AccessType=rw
 DefaultValue=0x1
 PDOMapping=0
-ParameterValue=0x00
 
 [1802sub3]
 ParameterName=Inhibit Time
@@ -900,7 +880,7 @@ DataType=0x0007
 AccessType=rw
 DefaultValue=$NODEID+0x480
 PDOMapping=0
-ParameterValue=1073742977
+ParameterValue=3221226625
 
 [1803sub2]
 ParameterName=Transmission Type
@@ -909,7 +889,6 @@ DataType=0x0005
 AccessType=rw
 DefaultValue=0xFE
 PDOMapping=0
-ParameterValue=0x00
 
 [1803sub3]
 ParameterName=Inhibit Time
@@ -956,7 +935,7 @@ DataType=0x0007
 AccessType=rw
 DefaultValue=0x60410010
 PDOMapping=0
-ParameterValue=0x60410010
+ParameterValue=1614872592
 
 [1A00sub2]
 ParameterName=Mapping Entry 2
@@ -965,7 +944,7 @@ DataType=0x0007
 AccessType=rw
 DefaultValue=0x00000000
 PDOMapping=0
-ParameterValue=0x60610008
+ParameterValue=1616969736
 
 [1A00sub3]
 ParameterName=Mapping Entry 3
@@ -987,6 +966,7 @@ DataType=0x0005
 AccessType=rw
 DefaultValue=0x02
 PDOMapping=0
+ParameterValue=1
 
 [1A01sub1]
 ParameterName=Mapping Entry 1
@@ -995,6 +975,7 @@ DataType=0x0007
 AccessType=rw
 DefaultValue=0x60410010
 PDOMapping=0
+ParameterValue=1617690656
 
 [1A01sub2]
 ParameterName=Mapping Entry 2
@@ -1033,7 +1014,7 @@ DataType=0x0007
 AccessType=rw
 DefaultValue=0x60410010
 PDOMapping=0
-ParameterValue=0x60640020
+ParameterValue=1617166368
 
 [1A02sub2]
 ParameterName=Mapping Entry 2
@@ -1085,6 +1066,59 @@ ParameterName=Mapping Entry 3
 ObjectType=0x07
 DataType=0x0007
 AccessType=rw
+DefaultValue=0x00000000
+PDOMapping=0
+
+[2000]
+SubNumber=6
+ParameterName=Device Info
+ObjectType=0x09
+
+[2000sub0]
+ParameterName=numOfEntries
+ObjectType=0x07
+DataType=0x0005
+AccessType=const
+DefaultValue=0x5
+PDOMapping=0
+
+[2000sub1]
+ParameterName=MC_Type
+ObjectType=0x07
+DataType=0x0007
+AccessType=ro
+DefaultValue=0x00000000
+PDOMapping=0
+
+[2000sub2]
+ParameterName=MC_Version
+ObjectType=0x07
+DataType=0x0007
+AccessType=ro
+DefaultValue=0x00000000
+PDOMapping=0
+
+[2000sub3]
+ParameterName=MC_Date
+ObjectType=0x07
+DataType=0x0007
+AccessType=ro
+DefaultValue=0x00000000
+PDOMapping=0
+
+[2000sub4]
+ParameterName=MC_Time
+ObjectType=0x07
+DataType=0x0007
+AccessType=ro
+DefaultValue=0x00000000
+PDOMapping=0
+
+[2000sub5]
+ParameterName=MC_Variant
+ObjectType=0x07
+DataType=0x0007
+AccessType=ro
 DefaultValue=0x00000000
 PDOMapping=0
 
@@ -1157,8 +1191,8 @@ ObjectType=0x09
 ParameterName=Highest sub-index supported
 ObjectType=0x07
 DataType=0x0005
-AccessType=const
-DefaultValue=0x6
+AccessType=rw
+DefaultValue=0x1
 PDOMapping=0
 
 [2041sub1]
@@ -1178,7 +1212,7 @@ DefaultValue=0x0
 PDOMapping=0
 
 [2041sub3]
-ParameterName=PI_Torque_Error
+ParameterName=PID_Torque_Error
 ObjectType=0x07
 DataType=0x0004
 AccessType=ro
@@ -1186,7 +1220,7 @@ DefaultValue=0x0
 PDOMapping=0
 
 [2041sub4]
-ParameterName=PI_Torque_Error_Sum
+ParameterName=PID_Torque_Error_Sum
 ObjectType=0x07
 DataType=0x0004
 AccessType=ro
@@ -1194,7 +1228,7 @@ DefaultValue=0x0
 PDOMapping=0
 
 [2041sub5]
-ParameterName=PI_Flux_Error
+ParameterName=PID_Flux_Error
 ObjectType=0x07
 DataType=0x0004
 AccessType=ro
@@ -1202,7 +1236,7 @@ DefaultValue=0x0
 PDOMapping=0
 
 [2041sub6]
-ParameterName=PI_Flux_Error_Sum
+ParameterName=PID_Flux_Error_Sum
 ObjectType=0x07
 DataType=0x0004
 AccessType=ro
@@ -1219,7 +1253,7 @@ ParameterName=numOfEntries
 ObjectType=0x07
 DataType=0x0005
 AccessType=const
-DefaultValue=0x8
+DefaultValue=0x08
 PDOMapping=0
 
 [2042sub1]
@@ -1239,7 +1273,7 @@ DefaultValue=0x0
 PDOMapping=0
 
 [2042sub3]
-ParameterName=PI_Velocity_Error
+ParameterName=PID_Velocity_Error
 ObjectType=0x07
 DataType=0x0004
 AccessType=ro
@@ -1247,7 +1281,7 @@ DefaultValue=0x0
 PDOMapping=0
 
 [2042sub4]
-ParameterName=PI_Velocity_Error_Sum
+ParameterName=PID_Velocity_Error_Sum
 ObjectType=0x07
 DataType=0x0004
 AccessType=ro
@@ -1295,7 +1329,7 @@ ObjectType=0x09
 ParameterName=Highest sub-index supported
 ObjectType=0x07
 DataType=0x0005
-AccessType=const
+AccessType=rw
 DefaultValue=0x3
 PDOMapping=0
 
@@ -1308,7 +1342,7 @@ DefaultValue=0x0
 PDOMapping=0
 
 [2043sub2]
-ParameterName=PI_Position_Error
+ParameterName=PID_Position_Error
 ObjectType=0x07
 DataType=0x0004
 AccessType=ro
@@ -1501,9 +1535,9 @@ PDOMapping=0
 [2080sub2]
 ParameterName=Steps
 ObjectType=0x07
-DataType=0x0007
+DataType=0x0006
 AccessType=rw
-DefaultValue=0x00000000
+DefaultValue=0x0
 PDOMapping=0
 
 [2080sub3]
@@ -1588,7 +1622,7 @@ AccessType=rw
 PDOMapping=0
 
 [2101]
-ParameterName=Motor Status Flags
+ParameterName=Status Flags
 ObjectType=0x07
 DataType=0x0007
 AccessType=ro
@@ -1648,7 +1682,7 @@ DefaultValue=0x2
 PDOMapping=0
 
 [2703sub1]
-ParameterName=Physical Outputs
+ParameterName=Pysical Outputs
 ObjectType=0x07
 DataType=0x0007
 AccessType=rw
@@ -1836,6 +1870,14 @@ DataType=0x0004
 AccessType=ro
 PDOMapping=1
 
+[6065]
+ParameterName=Following Error Window
+ObjectType=0x07
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x00000000
+PDOMapping=0
+
 [6067]
 ParameterName=Position Window
 ObjectType=0x07
@@ -1848,6 +1890,14 @@ PDOMapping=0
 ParameterName=Position Window Time
 ObjectType=0x07
 DataType=0x0006
+AccessType=rw
+DefaultValue=0x0000
+PDOMapping=0
+
+[606A]
+ParameterName=Sensor Selection Code
+ObjectType=0x07
+DataType=0x0003
 AccessType=rw
 DefaultValue=0x0000
 PDOMapping=0
@@ -1874,10 +1924,25 @@ AccessType=rww
 DefaultValue=0x0000
 PDOMapping=1
 
+[6072]
+ParameterName=Max Torque
+ObjectType=0x07
+DataType=0x0006
+AccessType=rw
+DefaultValue=0x0000
+PDOMapping=0
+
+[6074]
+ParameterName=Torque Demand Value
+ObjectType=0x07
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
 [6077]
 ParameterName=Torque Actual Value
 ObjectType=0x07
-DataType=0x0004
+DataType=0x0003
 AccessType=ro
 PDOMapping=1
 
@@ -1926,6 +1991,14 @@ AccessType=rw
 DefaultValue=0x7FFFFFFF
 PDOMapping=0
 
+[607F]
+ParameterName=Max Profile Velocity
+ObjectType=0x07
+DataType=0x0007
+AccessType=rwr
+DefaultValue=0xFA0
+PDOMapping=1
+
 [6081]
 ParameterName=Profile Velocity in pp-mode
 ObjectType=0x07
@@ -1946,7 +2019,7 @@ PDOMapping=0
 ParameterName=Profile Deceleration
 ObjectType=0x07
 DataType=0x0007
-AccessType=ro
+AccessType=rw
 DefaultValue=0x00000000
 PDOMapping=0
 
@@ -2007,25 +2080,25 @@ PDOMapping=0
 ParameterName=Position Offset
 ObjectType=0x07
 DataType=0x0004
-AccessType=rww
+AccessType=rw
 DefaultValue=0x00000000
-PDOMapping=1
+PDOMapping=0
 
 [60B1]
 ParameterName=Velocity Offset
 ObjectType=0x07
 DataType=0x0004
-AccessType=rww
+AccessType=rw
 DefaultValue=0x00000000
-PDOMapping=1
+PDOMapping=0
 
 [60B2]
 ParameterName=Torque Offset
 ObjectType=0x07
-DataType=0x0004
-AccessType=rww
+DataType=0x0003
+AccessType=rw
 DefaultValue=0x00
-PDOMapping=1
+PDOMapping=0
 
 [60C2]
 SubNumber=3
@@ -2052,6 +2125,14 @@ PDOMapping=0
 ParameterName=timeIndex
 ObjectType=0x07
 DataType=0x0002
+AccessType=rw
+DefaultValue=0x00
+PDOMapping=0
+
+[60F2]
+ParameterName=Positioning Option Code
+ObjectType=0x07
+DataType=0x0006
 AccessType=rw
 DefaultValue=0x00
 PDOMapping=0
@@ -2085,3 +2166,14 @@ DataType=0x0007
 AccessType=ro
 DefaultValue=0x00020192
 PDOMapping=0
+
+[DeviceCommissioning]
+NodeID=1
+NodeName=
+NodeRefd=
+Baudrate=1000
+NetNumber=0
+NetworkName=
+NetRefd=
+CANopenManager=0
+LSS_SerialNumber=0
